@@ -18,6 +18,8 @@ try {
 } catch (err: any) {
     if (!/already exists/u.test(err.message)) {
         console.error('Firebase admin initialization error', err.stack);
+    } else {
+        console.error('Firebase admin initialization error', err.stack);
     }
 }
 
